@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(./assets/bg-interior.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Poppins;
+    color: aliceblue;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6rem;
+}
+.logo{
+    color: aliceblue;
+}
+.nav-items{
+    display: flex;
+}
+.nav-item{
+    margin-left: 2rem;
+    list-style: none;
+    color: aliceblue;
+    font-size: 18px;
+}   
+.phone{
+    color: aliceblue;
+}
+.phone-img{
+    position: relative;
+    left: 12rem;
+}
+main{
+    position: relative;
+}
+
+.hero-tagline{
+    color:aliceblue;
+    font-size: 200%;
+    padding-top: 10%;
+    padding-left: 10vw;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    color: aliceblue;
+    border-radius: 3.5rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 10rem;
+}
+.btn:hover{
+    border: 3px solid aliceblue;
+    box-shadow:  0, 0, 0.4 , 2.4 #fff;
+}
+hr{
+    width: 65%;
+    position: absolute;
+    right: 0;
+    height: 1px;
+}
+.card{
+    width: 15rem;
+    height: 4rem;
+    background-color: rgba(240, 248, 255, 0.194);    
+    position: relative;
+    left: 70rem;
+    bottom: 20rem;
+}
+.card1{
+    margin-bottom: 4rem;
+
+}
+.card2{
+    background-color: rgba(240, 248, 255, 0.194);
+    position: relative;
+    top: 10rem;
+    height: 10rem;
+    right: 25rem;
+}
+
+.card p{
+    margin-left: 10px;
+}
+.line1{
+    background-color: #fff;
+    height: 75px;
+    width: 2px;
+    transform: rotate(180deg);
+    position: relative;
+    bottom: 2rem;
+    left: 12rem;
+    
+}
+.circle1{
+    background-color: #fff;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: relative;
+   left: 11.6rem;
+   bottom: 2rem;
+
+}
+.line2{
+    background-color: #fff;
+    height: 100px;
+    width: 2px;
+    transform: rotate(90deg);
+    position: relative;
+    right: 7rem;
+}
+
+.circle2{
+    background-color: #fff;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: relative;
+    right: 4rem;
+    top: 3.6rem;
+}
+.bulb-img{
+    position: relative;
+    right: 4em;
+    bottom: 2px;
+    padding: 4px 2px;
+}
+.puzzle-img{
+    position: relative;
+    left: 1rem;
+    margin-bottom: 3px;
+    z-index: 3;
+}
+.card img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.card1 .bg-icon{
+    /* display: none; */
+    position: relative;
+    right: 3rem;
+}
+
+/* responsive mobile design */
+
+@media only screen and (max-device-width: 480px) {
+    /* STYLES HERE */
+    body{
+        background: url(./assets/bg-interior.jpg);
+        background-repeat:repeat-y;
+        background-size:cover;
+        font-family: Poppins;
+        color: aliceblue;
+    }
+    .nav-items{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center;
+        height: 6rem; */
+        width: 100%;
+    }
+    .phone{
+        float: right;
+        margin-right: 1rem;
+    }
+    .phone-img{
+        position: relative;
+        left: 3rem;
+    }
+    .logo{
+        margin-left: 1rem;
+    }
+
+    .hero-tagline {
+        color:aliceblue;
+        font-size: 150%;
+        padding-top: 10%;
+        padding-left: 10vw;
+    }
+
+    .btn{
+        padding: .6rem 2rem;
+        background-color: transparent;
+        border: 2px solid aliceblue;
+        color: aliceblue;
+        border-radius: 3rem;
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        margin-left: 3rem;
+    }
+
+
+    .card{
+        width: 15rem;
+        height: 4rem;
+        background-color: rgba(240, 248, 255, 0.194);    
+        position: relative;
+        left: 10rem;
+        bottom: -5rem;
+    }
+    .card1{
+        margin-bottom: 4rem;
+        position: relative;
+        right: -1rem;
+    
+    }
+    .card2{
+        background-color: rgba(240, 248, 255, 0.194);
+        position: relative;
+        top: 5rem;
+        height: 10rem;
+        right: 10rem;
+    }
+    
+    .card p{
+        margin-left: 50px;
+    }
+    .line1{
+        background-color: #fff;
+        height: 75px;
+        width: 2px;
+        transform: rotate(180deg);
+        position: relative;
+        bottom: 3.5rem;
+        left: 8rem;
+        
+    }
+    .circle1{
+        background-color: #fff;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        position: relative;
+       left: 7.5rem;
+       bottom: 4rem;
+    
+    }
+    .line2{
+        background-color: #fff;
+        height: 100px;
+        width: 2px;
+        transform: rotate(90deg);
+        position: relative;
+        right: -8rem;
+    }
+    
+    .circle2{
+        background-color: #fff;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        position: relative;
+        right: -11rem;
+        top: 3.6rem;
+    }
+    .bulb-img{
+        position: relative;
+        right: 4em;
+        bottom: 2px;
+        padding: 4px 2px;
+    }
+    .puzzle-img{
+        position: relative;
+        left: 1rem;
+        margin-bottom: 3px;
+        z-index: 3;
+    }
+    .card img{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .card1 .bg-icon{
+        /* display: none; */
+        position: relative;
+        right: 3rem;
+    }
+}
+@media screen and (min-device-width: 510px) and (max-device-width: 740px) {
+    .phone-img {
+        position: relative;
+        left: 6rem;
+      }
+      .card {
+        width: 15rem;
+        height: 4rem;
+        background-color: rgba(240, 248, 255, 0.194);
+        position: relative;
+        left: 12rem;
+        bottom: -5rem;
+      }
+} 
+@media screen and (min-device-width: 481px) and (max-device-width: 868px) { 
+    /* STYLES HERE */
+    body{
+        background: url(./assets/bg-interior.jpg);
+        background-repeat:repeat-y;
+        background-size:cover;
+        font-family: Poppins;
+        color: aliceblue;
+    }
+    .nav-items{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center;
+        height: 6rem; */
+        width: 100%;
+    }
+    .phone{
+        float: right;
+        margin-right: 1rem;
+    }
+    .phone-img {
+        position: relative;
+        left: 14rem;
+      }
+    .logo{
+        margin-left: 1rem;
+    }
+
+    .hero-tagline {
+        color:aliceblue;
+        font-size: 150%;
+        padding-top: 10%;
+        padding-left: 10vw;
+    }
+
+    .btn{
+        padding: .6rem 2rem;
+        background-color: transparent;
+        border: 2px solid aliceblue;
+        color: aliceblue;
+        border-radius: 3rem;
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        margin-left: 3rem;
+    }
+
+
+    .card{
+        width: 15rem;
+        height: 4rem;
+        background-color: rgba(240, 248, 255, 0.194);    
+        position: relative;
+        left: 24rem;
+        bottom: -5rem;
+    }
+    .card1{
+        margin-bottom: 4rem;
+        position: relative;
+        right: -1rem;
+    
+    }
+    .card2{
+        background-color: rgba(240, 248, 255, 0.194);
+        position: relative;
+        top: 5rem;
+        height: 10rem;
+        right: 10rem;
+    }
+    
+    .card p{
+        margin-left: 50px;
+    }
+    .line1{
+        background-color: #fff;
+        height: 75px;
+        width: 2px;
+        transform: rotate(180deg);
+        position: relative;
+        bottom: 3.5rem;
+        left: 8rem;
+        
+    }
+    .circle1{
+        background-color: #fff;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        position: relative;
+       left: 7.5rem;
+       bottom: 4rem;
+    
+    }
+    .line2{
+        background-color: #fff;
+        height: 100px;
+        width: 2px;
+        transform: rotate(90deg);
+        position: relative;
+        right: -8rem;
+    }
+    
+    .circle2{
+        background-color: #fff;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        position: relative;
+        right: -11rem;
+        top: 3.6rem;
+    }
+    .bulb-img{
+        position: relative;
+        right: 4em;
+        bottom: 2px;
+        padding: 4px 2px;
+    }
+    .puzzle-img{
+        position: relative;
+        left: 1rem;
+        margin-bottom: 3px;
+        z-index: 3;
+    }
+    .card img{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .card1 .bg-icon{
+        /* display: none; */
+        position: relative;
+        right: 3rem;
+    }
+}
+@media screen and (min-device-width: 510px) and (max-device-width: 740px) {
+    .phone-img {
+        position: relative;
+        left: 6rem;
+      }
+      .card {
+        width: 15rem;
+        height: 4rem;
+        background-color: rgba(240, 248, 255, 0.194);
+        position: relative;
+        left: 12rem;
+        bottom: -5rem;
+      }
+} 
+@media screen and (min-width: 969px) {
+    /* STYLES HERE */
+
+    .card{
+        left: 45rem;
+        bottom: 13rem;
+    }
+    .phone-img {
+        position: relative;
+        left: 2rem;
+      }
+}
+
+@media screen and (min-width: 1229px){
+    .phone-img {
+        position: relative;
+        left: 8rem;
+      }
+      .card{
+        left: 60rem;
+        bottom: 16rem;
+      }
+    }
+
